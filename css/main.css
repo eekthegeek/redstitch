@@ -1,0 +1,548 @@
+@charset "UTF-8";
+/*
+ *
+ *
+ *
+ * Custom CSS by Eric Niemiller
+
+1. General
+2. Grid Set Up
+3. Typography
+4. Header Styles
+5. Banner/Aspot Styles
+6. Video/Highlight Styles
+7. Testimonials Styles
+
+ */
+
+/* 1. General
+*********************************************/
+body {
+  background-color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  color:#4f5858;
+}
+/* 2. Grid Setup
+*********************************************/
+.container {
+  position: relative;
+ width: 100%;
+ max-width: 960px;
+ margin: 0 auto;
+ padding: 0 0px;
+ box-sizing: border-box;
+ background-color: #FFF;
+ }
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.column {
+   width: 100%;
+   float: left;
+   box-sizing: border-box;
+   margin-left:2%;
+ }
+.column:first-child {
+  margin-left: 0;
+}
+.one-half.column {
+  width:49%;
+}
+.one-third.column {
+  width: 31.6666666667%;
+}
+.two-thirds.column {
+  width: 66.3333333333%;
+}
+
+.footer-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.footer-left {
+  width:23%;
+  float:left;
+  text-align: center;
+}
+.footer-right {
+  width: 74%;
+  float:left;
+}
+
+/* 3. Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-family:'Roboto', sans-serif;
+  font-weight: bold; }
+
+
+/* 4. Header Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+header {
+  padding: 15px 0 6px 0;
+  background-color: #FFF;
+}
+header p {
+
+  display:inline;
+  text-align: right;
+  font-family:'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size:0.90rem;
+  width:79%;
+  margin-right: 5px;
+  padding-top:10px;
+}
+img.main-logo {
+  width:50%;
+  height:auto;
+}
+img.sponsor {
+
+  float:right;
+}
+
+/* 5. Banner/Aspot Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.banner {
+  background-image: url("../images/Aspot-Image.jpg");
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-size:cover;
+  background-position: center;
+
+}
+
+.cta-box {
+  height:auto;
+  min-height:200px;
+  color:#fff;
+  margin-bottom: 100px;
+
+
+}
+.cta-box-after {
+  height:25px;
+  width:100%;
+
+  background-color: rgba(167, 47, 0, 0.8);
+
+  -webkit-clip-path: ellipse(100% 70% at 10% 0%);
+ clip-path: ellipse(100% 70% at 10% 0%);
+
+ }
+
+.cta-content {
+  padding:55px 7%;
+  display: block;
+  background-color: rgba(167, 47, 0, 0.8);
+}
+.cta-content h1 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+.cta-content p {
+  font-size: 1.19em;
+  font-weight:100;
+  letter-spacing: 0.045em;
+  margin-bottom: 25px;
+}
+.cta-content .cta-form-holder {
+  display: block;
+  width:100%;
+  overflow: hidden;
+}
+.cta-content form {
+  display: block;
+  width:100%;
+}
+
+.cta-content input[type="text"] {
+  display: block;
+  width:100%;
+  /* border:1px solid #00496d; */
+  border:none;
+  margin-bottom:3px;
+  -webkit-box-shadow:inset 0px 0px 0px 1px #00496d;
+    -moz-box-shadow:inset 0px 0px 0px 1px #00496d;
+    box-shadow:inset 0px 0px 0px 1px #00496d;
+  padding:18px 0 18px 10px;
+  margin-bottom:5px;
+}
+.cta-content button {
+  padding:15px 10px;
+  width:100%;
+  background-color:#00496d;
+  border:none;
+  border-bottom:3px solid #2d6ca2;
+  color:#FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  text-align: left;
+}
+.cta-content button:hover {
+  background-color:#2d6ca2;
+  border-bottom:3px solid #00496d;
+}
+
+.cta-content button:before {
+  content:"\f002";
+  color:#2d6ca2;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  font-size:1.5em;
+  margin-right:10px
+}
+.cta-content button:hover:before {
+  color:#FFF;
+}
+/* 6. Video/Highlight Row
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.row.video-row {
+  align-items:flex-start;
+  margin-top:20px;
+}
+.video p {
+  padding:0 0 0 5% ;
+  font-size: 0.85em;
+  line-height: 1.5em;
+}
+.embed-container {
+  position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;
+  }
+  .embed-container iframe,
+  .embed-container object,
+  .embed-container embed {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  }
+.highlight {
+  padding:0 4% 0 2%;
+}
+.highlight p{
+  margin-top:0;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.4em;
+}
+.highlight a {
+  color:#00496d;
+  text-decoration: none;
+  font-weight: 700;
+}
+.highlight a:hover, .highlight a:active {
+  color:#3c9fd0;
+}
+
+.icon-highlight {
+  margin-bottom:22px;
+}
+
+.icon-highlight.beer:before{
+  content: "\0041";
+  font-family: 'Glyphter';
+  font-size: 2.8em;
+  float:left;
+  height:80px;
+  width:50px;
+  margin-top:8px;
+  color: #00496d;
+}
+.icon-highlight.wine:before {
+  content: "\0042";
+  font-family: 'Glyphter';
+  font-size: 2.8em;
+  float:left;
+  height:80px;
+  width:50px;
+  margin-top:8px;
+  color: #00496d;
+}
+
+
+.icon-highlight h4{
+  color: #00496d;
+  margin-bottom:0;
+  line-height: 1.58em;
+
+}
+.icon-highlight p {
+  font-size: 0.9em;
+}
+.ul-wrapper {
+  -moz-column-count: 2;
+ -webkit-column-count: 2;
+  column-count: 2;
+  margin-bottom:2em;
+}
+.ul-wrapper ul {
+  margin:0;
+  margin-left:10px;
+  padding:0;
+}
+.ul-wrapper li {
+  margin-bottom: 2px;
+  list-style-type: none;
+  list-style-position: outside;
+  width:95%;
+  text-indent: -0.75em;
+}
+.ul-wrapper li:before {
+  content: "\203A";
+  color: #00496d;
+  padding-right:0.3em;
+  font-size:1.2em;
+}
+
+.custom-hr {
+  padding:30px 0;
+  border:0;
+  background-image: url('../images/custom-hr.png');
+  background-repeat: no-repeat;
+  background-position:center;
+
+}
+.cta-wrapper {
+  
+  margin-bottom: 60px;
+}
+a.cta-highlight-link {
+  color:#c24d00;
+  font-weight: bold;
+  font-size:1.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+a.cta-highlight-link:hover, a.cta-highlight-link:active {
+  color:#d5a789;
+
+}
+a.cta-highlight-link:after {
+  content:" \203A ";
+  font-size: 1.6em;
+
+}
+/* 7. Testimonial Row
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.testimonial {
+  background-color: #00496d;
+  align-items: flex-start;
+}
+ .testimonial-image {
+   width:100%;
+   height:100%;
+ }
+
+.quotes {
+  color:#FFFFFF;
+  position: relative;
+}
+.quote-arrow {
+  position:absolute;
+  top:0;
+  left:-48px;
+}
+.quote-copy {
+  border:1px solid #2d6ca2;
+  border-left-width: 0;
+  margin:8%;
+  padding-bottom:20px;
+  background-image: url("../images/quote-arrow.png");
+  background-repeat: no-repeat;
+  background-position: -7px center;
+  position: absolute;
+  z-index: 300;
+}
+
+.quote-copy blockquote {
+  font-family: 'Merriweather', serif;
+  font-size: 1.15em;
+  line-height: 1.45em;
+  z-index: 30;
+  margin-right:0;
+
+
+
+}
+.quote-copy blockquote::before{
+  content: "\201C";
+  font-size:10em;
+  font-family: "Merriweather", serif;
+  position: absolute;
+  color:#2d6ca2;
+  top:100px;
+  z-index: -1;
+
+}
+.quote-copy blockquote::after{
+  content: "\201D";
+}
+.quote-owner, .quote-title {
+  display: block;
+  -webkit-margin-start: 40px;
+
+}
+.quote-owner {
+  font-weight:bold;
+}
+.quote-title {
+  display: block;
+  font-weight:normal;
+  font-style:italic;
+}
+/* 8. Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+footer {
+  font-size: .85em;
+}
+.footer-logo {
+  float: left;
+  padding:10px 15px;
+  height:auto;
+  width:182px;
+}
+.copyright {
+  display: inline;
+  float: left;
+}
+.copyright a {
+  color:#00496d;
+  display:inline;
+  margin-right: 7px;
+  margin-left: 7px;
+  padding:0;
+  padding-left:10px;
+  border-left:1px solid #aeaeae;
+
+
+}
+.copyright a:hover, .copyright a:active {
+  color:#001e2c;
+}
+
+/* For devices smaller than 768px */
+@media (max-width: 768px) {
+  /* 1. General
+  *********************************************/
+  .container{
+    width:100%;
+    max-width: 100%;
+  }
+  /* 2. Grid
+  *********************************************/
+  .column.one-half {
+    width:100%;
+    }
+  /* 3. Typography
+  *********************************************/
+
+  /* 4. Header Styles
+  *********************************************/
+  header .column.one-half {
+    width:48%;
+    float: left;
+    }
+  header p {
+    display: none;
+    }
+  img.main-logo {
+    width:100%;
+    }
+    /* 5. Aspot Banner Styles
+    *********************************************/
+    .cta-box {
+      margin-bottom:0;
+      text-align: center;
+      }
+    .cta-box-after {
+      display: none;
+    }
+
+    .cta-content button span{
+        width:55%;
+        display: block;
+        float: left;
+    }
+    .cta-content button:before {
+      margin-left:15%;
+      float:left;
+
+    }
+    /* 6. Video/Highlight Row
+      *********************************************/
+    .row.video-row {
+        margin-top:0;
+      }
+      .video p {
+        background-color: #f1f1f1;
+        margin-top: 0;
+        padding:3%;
+        text-align: center;
+      }
+      .highlight {
+        text-align: center;
+      }
+      .cta-wrapper {
+        margin-bottom:20px;
+        text-align: center;
+      }
+      .ul-wrapper {
+        -moz-column-count: 1;
+       -webkit-column-count: 1;
+        column-count: 1;
+        margin-bottom:1em;
+        float:left;
+        width: 100%;
+      }
+      .ul-wrapper ul {
+        margin:0;
+        margin-left:10px;
+        padding:0;
+
+
+      }
+      .ul-wrapper li {
+        margin-bottom: 5px;
+        list-style-type: none;
+        list-style-position: outside;
+        width:95%;
+        text-indent: 0;
+        text-align: left;
+      }
+      .icon-highlight.beer::before,   .icon-highlight.wine::before {
+        width:100%;
+        height:auto;
+
+      }
+      .quote-arrow {
+        display: none;
+      }
+      .quote-copy {
+        background-image:none;
+        border:1px solid #2d6ca2;
+        position: relative;
+      }
+      .quote-copy blockquote {
+        margin:10px;
+      }
+      .quote-owner, .quote-title {
+        -webkit-margin-start: 10px;
+      }
+    .footer-left, .footer-right{
+      width:100%;
+      margin:0 3%;
+
+    }
+    .footer-logo {
+      float:none;
+    }
+}

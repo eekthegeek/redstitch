@@ -1,0 +1,193 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hopster Brewing | Farm to Table Brew</title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Roboto" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://i.icomoon.io/public/temp/94b1b356e7/UntitledProject/style.css">
+  <link rel="stylesheet" href="css/Glyphter.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+  // Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+      &&
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+  });
+  </script>
+</head>
+
+
+<body>
+  <div class="container"><!-- Main Wrapper for defining page width/position/etc -->
+    <header> <!-- Logo Area Begin -->
+      <div class="row">
+          <div class="column one-half" >
+              <img src="images/main-logo.png" class="main-logo"/>
+          </div>
+          <div class="column one-half">
+              <img src="images/award-logo.png" class="sponsor"/>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam blandit convallis porttitor dolor sit amet.</p>
+
+          </div>
+      </div>
+    </header> <!-- Logo Area End -->
+
+    <!-- Main Content Area Begin -->
+    <section role="main" id="main-content">
+      <div class="row banner" id="smooth"><!-- ASPOT Row -->
+
+        <div class="column one-half cta-box" ><!-- CTA BOX/COLUMN -->
+
+          <div class="cta-content">
+              <h1>Lorem ipsum dolor sit amet, consectetur elit Etiam blandit convallis porttitor</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam blandit convallis porttitor. Donec ut massa elit. </p>
+              <div class="cta-form-holder">
+
+                <form>
+                    <input type="text" placeholder="Input Field"/>
+                    <button class="cta-button" type="submit" value="Submit" /><span>SUBMIT IPSUM DOLOR SIT CONSECTECT</span></button>
+                </form>
+
+              </div>
+          </div>
+          <div class="cta-box-after"></div>
+
+        </div><!-- CTA Box/Column End -->
+        <div class="one-half">
+        </div>
+
+      </div> <!-- ASPOT Row End-->
+
+
+      <!-- Video Row Start-->
+      <div class="row video-row">
+        <!-- Video Column-->
+        <div class="column one-half video" >
+          <div class='embed-container'><iframe src='http://player.vimeo.com/video/66140585' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam blandit convallis porttitor. Donec ut massa elit. In vel neque rutrum, mattis tortor eu, ultrices lacus. Aenean lacinia dolor in egestas efficitur. Sed ut pulvinar ligula. Orci varius natoque montes.
+</p>
+        </div>
+
+        <!-- Highlight Column -->
+        <div class="column one-half" >
+          <div class="highlight">  <!-- Highlight -->
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit <a href="#">sitamet consectetur adipiscing</a> adipiscing elit dolor <a href="#">sitamet</a> amet:</p>
+
+              <div class="icon-highlight beer">
+
+                <h4>Lorem Ipsum Dolor Sit</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam blandit convallis porttitor, lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+
+              <div class="icon-highlight wine">
+
+                <h4>Lorem Ipsum Dolor Sit</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam blandit convallis porttitor, lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+
+              <hr class="custom-hr" />
+
+
+              <p><b>Vestibulum elementum rhoncus nulla:</b></p>
+
+              <div class="ul-wrapper">
+
+
+                <ul>
+                  <li>Vestibulum elementum</li>
+                  <li>Finibus non arcu</li>
+                  <li>Curabitur sit amet</li>
+                  <li>Donec nibh tortor</li>
+                  <li>Vestibulum elementum Finibus non arcu</li>
+                  <li>Phasellus rutrum urna diam</li>
+                  <li>Curabitur eget diam</li>
+                </ul>
+              </div>
+              <div class="cta-wrapper">
+                  <a href="#smooth" class="cta-highlight-link"/>CTA IPSUM DOLOR SIT CONSECTETUR CTA</a>
+              </div>
+          </div>
+        </div>   <!-- Highlight Column End-->
+      </div>
+      <!-- Video Row End-->
+
+      <div class="row testimonial">
+        <div class="column one-half" >
+            <img src="images/Quote-Image.jpg" class="testimonial-image"/>
+        </div><!--column-->
+
+        <div class="column one-half quotes" >
+            <img src="images/quote-arrow-big.png" class="quote-arrow" />
+            <div class="quote-copy">
+              <blockquote>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam blandit convallis porttitor. Donec ut massa elit. In vel neque rutrum, mattis tortor eu, ultrices lacus.
+            </blockquote>
+              <span class="quote-owner">Some Dudes</span>
+              <span class="quote-title">Co-Founder, Some Brewery</span>
+
+            </div>
+
+
+        </div><!--column-->
+
+      </div><!--row-->
+    </section>
+    <footer>
+      <div class="row footer-row">
+        <div class="column footer-left">
+              <img src="images/main-logo.png" class="footer-logo"/>
+        </div>
+        <div class="column footer-right">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam blandit convallis porttitor. Donec ut massa elit. In vel neque rutrum, mattis tortor eu, ultrices lacus. Aenean lacinia dolor in egestas efficitur. Proin et malesuada leo, vel placerat enim. Nam neque ligula, convallis et posuere in, mollis in augue. Sed ut pulvinar ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam blandit. </p>
+          <p class="copyright">Copyright Lorem Ipsum dolor sit amet, consectetur
+              <a href="#">Privacy Policy</a>
+              <a href="#">Legal Notice</a>
+
+              </p>
+
+        </div>
+      </div>
+    </footer>
+
+
+</div><!--wrapper-->
+</html>
